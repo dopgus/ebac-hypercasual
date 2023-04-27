@@ -8,7 +8,6 @@ public class ItemManager : Singleton<ItemManager>
 {
     public SOInt coins;
     public TextMeshProUGUI uiTextCoins;
-    internal static object Instance;
 
     private void Start()
     {
