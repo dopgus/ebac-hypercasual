@@ -56,18 +56,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AnimationExample.cs" />
     <Compile Include="Assets\Scripts\Utils\SO\SOString.cs" />
     <Compile Include="Assets\Scripts\Ebac\Core\Singleton\Singleton.cs" />
+    <Compile Include="Assets\Scripts\LevelManager\LevelPieceBase.cs" />
+    <Compile Include="Assets\Scripts\Utils\LoadSceneHelper.cs" />
     <Compile Include="Assets\Scripts\TouchController.cs" />
+    <Compile Include="Assets\Scripts\LevelManager\LevelPieceBasedSetup.cs" />
     <Compile Include="Assets\Scripts\Utils\SO\SOUIIntUpdate.cs" />
+    <Compile Include="Assets\Scripts\ArtPiece\ArtPiece.cs" />
+    <Compile Include="Assets\Scripts\LevelManager\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\ArtPiece\ArtManager.cs" />
     <Compile Include="Assets\Scripts\Items\ItemCollectableCoins.cs" />
+    <Compile Include="Assets\Scripts\PowerUP\PowerUPHeight.cs" />
     <Compile Include="Assets\Scripts\LerpHelper.cs" />
     <Compile Include="Assets\Scripts\Items\CollectableBase.cs" />
     <Compile Include="Assets\Scripts\Utils\SO\SOInt.cs" />
+    <Compile Include="Assets\Scripts\PowerUP\PowerUPSpeedUp.cs" />
     <Compile Include="Assets\Scripts\Utils\SO\SOFloat.cs" />
+    <Compile Include="Assets\Scripts\AnimationManager\AnimationManager.cs" />
     <Compile Include="Assets\Scripts\Items\ItemManager.cs" />
+    <Compile Include="Assets\Scripts\PowerUP\PowerUPInvincible.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Utils\LoadSceneHelper.cs" />
+    <Compile Include="Assets\Scripts\PowerUP\PowerUPBase.cs" />
+    <Compile Include="Assets\Scripts\PowerUP\PowerUpCoins.cs" />
+    <Compile Include="Assets\Scripts\Color\ColorManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -305,6 +318,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -662,9 +678,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F0AF2218-F9DC-8DC7-F969-92A42701406B}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{4E7E393E-0717-95A0-6AEA-1ED20EB74B93}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{EC46FA8F-A7C4-44A0-96C0-2E65719CF7DB}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{863DE81C-64EF-2626-4EB7-F46146CDEB21}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{79A438D7-C80E-5DF5-1BBE-FDB624A24D38}</Project>
@@ -701,14 +729,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{92B65A0F-A13B-B650-C5F5-8F37759AE738}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{863DE81C-64EF-2626-4EB7-F46146CDEB21}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{4E7E393E-0717-95A0-6AEA-1ED20EB74B93}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
