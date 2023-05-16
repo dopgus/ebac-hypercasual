@@ -510,14 +510,36 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251373715}
-  m_LocalRotation: {x: 0.14987503, y: -0.08028998, z: 0.012212205, w: 0.98536384}
-  m_LocalPosition: {x: 1.57, y: 0.35999966, z: -9.57}
+  m_LocalRotation: {x: 0.35065964, y: -0.07582261, z: 0.028497446, w: 0.9329934}
+  m_LocalPosition: {x: 1.5139999, y: 9.059998, z: -9.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1315208531}
   m_Father: {fileID: 630289078}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &297383098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5531986718136724959, guid: 89e20167823a30d459856414377997d1, type: 3}
+  m_PrefabInstance: {fileID: 1756477544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &297383100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297383098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262135fd578f02d44a300dbadd0e5df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  compareTag: Player
+  particleSystem: {fileID: 0}
+  timeToHide: 1
+  graphicItem: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &418789917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,8 +1166,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.14987503, y: -0.08028998, z: 0.012212205, w: 0.98536384}
-  m_LocalPosition: {x: 1.57, y: 0.35999966, z: -9.57}
+  m_LocalRotation: {x: 0.35065964, y: -0.07582261, z: 0.028497446, w: 0.9329934}
+  m_LocalPosition: {x: 1.5139999, y: 9.059998, z: -9.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1190,7 +1212,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7591535716812492788, guid: 89e20167823a30d459856414377997d1, type: 3}
   m_PrefabInstance: {fileID: 1756477544}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 297383098}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9debcbb04e096dc49b571a812c2a423b, type: 3}
@@ -1482,7 +1504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 1.57, y: 3.0199997, z: -9.57}
+  m_FollowOffset: {x: 1.52, y: 8.239998, z: -9.29}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1837,7 +1859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5156129202013452133, guid: 89e20167823a30d459856414377997d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.48
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 5156129202013452133, guid: 89e20167823a30d459856414377997d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1874,6 +1896,10 @@ PrefabInstance:
     - target: {fileID: 5531986718136724959, guid: 89e20167823a30d459856414377997d1, type: 3}
       propertyPath: m_Name
       value: PFB_Astronaut Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362532124687793466, guid: 89e20167823a30d459856414377997d1, type: 3}
+      propertyPath: m_TagString
+      value: CoinCollector
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e20167823a30d459856414377997d1, type: 3}
@@ -1968,7 +1994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779031576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.66, z: 0}
+  m_LocalPosition: {x: -0.006, y: 0.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1902556690}

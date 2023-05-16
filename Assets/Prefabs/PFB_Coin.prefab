@@ -64,7 +64,7 @@ MonoBehaviour:
   graphicItem: {fileID: 5555795235742108654}
   audioSource: {fileID: 0}
   collider: {fileID: 2167681195155041186}
-  lerp: 5
+  lerp: 9
   minDistance: 1
   collect: 0
 --- !u!1 &5555795235742108654
