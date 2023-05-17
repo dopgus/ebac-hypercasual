@@ -2471,6 +2471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piece_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1255617364002086711, guid: aac4a07a1a90c8649ac51cd7909c7f7d, type: 3}
+      propertyPath: positions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1650382115097823305, guid: aac4a07a1a90c8649ac51cd7909c7f7d, type: 3}
       propertyPath: m_RootOrder
       value: 7
