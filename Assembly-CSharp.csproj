@@ -68,11 +68,13 @@
     <Compile Include="Assets\Scripts\Utils\MovimentHelper.cs" />
     <Compile Include="Assets\Scripts\LevelManager\LevelManager.cs" />
     <Compile Include="Assets\Scripts\ArtPiece\ArtManager.cs" />
+    <Compile Include="Assets\Scripts\Utils\ColorChange.cs" />
     <Compile Include="Assets\Scripts\Items\ItemCollectableCoins.cs" />
     <Compile Include="Assets\Scripts\PowerUP\PowerUPHeight.cs" />
     <Compile Include="Assets\Scripts\LerpHelper.cs" />
     <Compile Include="Assets\Scripts\Items\CollectableBase.cs" />
     <Compile Include="Assets\Scripts\Color\ColorManager.cs" />
+    <Compile Include="Assets\Scripts\Utils\BounceHelper.cs" />
     <Compile Include="Assets\Scripts\Utils\SO\SOInt.cs" />
     <Compile Include="Assets\Scripts\PowerUP\PowerUPSpeedUp.cs" />
     <Compile Include="Assets\Scripts\Utils\SO\SOFloat.cs" />
@@ -83,8 +85,7 @@
     <Compile Include="Assets\Scripts\CoinsAnimator\CoinsAnimationManager.cs" />
     <Compile Include="Assets\Scripts\PowerUP\PowerUPBase.cs" />
     <Compile Include="Assets\Scripts\PowerUP\PowerUpCoins.cs" />
-    <Compile Include="Assets\Scripts\Utils\BounceHelper.cs" />
-    <Compile Include="Assets\Scripts\Utils\ColorChange.cs" />
+    <Compile Include="Assets\Scripts\Utils\LineRendererHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
