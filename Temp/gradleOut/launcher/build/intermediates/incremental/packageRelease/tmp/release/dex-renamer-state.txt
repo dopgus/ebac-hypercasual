@@ -1,4 +1,0 @@
-#Fri May 19 11:17:18 BRT 2023
-base.0=D\:\\Unity\\ebac-hypercasual\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
